@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Data Statistik</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            STATISTIK CILACAP
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Beranda
+            </a>
+
+            <a href="data.html">
+                Data
+            </a>
+
+            <a href="maps.html">
+                Maps
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- KONTEN DATA -->
+
+    <div class="container">
+
+
+        <!-- SIDEBAR -->
+
+        <aside>
+
+            <h3>
+                Statistik Demografi dan Sosial
+            </h3>
+
+            <ul>
+
+                <li onclick="tampilkanData('penduduk')">
+                    Kependudukan dan Migrasi
+                </li>
+
+                <li onclick="tampilkanData('tenaga')">
+                    Tenaga Kerja
+                </li>
+
+                <li onclick="tampilkanData('pendidikan')">
+                    Pendidikan
+                </li>
+
+                <li onclick="tampilkanData('kesehatan')">
+                    Kesehatan
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+        <!-- TABEL -->
+
+        <main>
+
+            <h1>
+                Jumlah Penduduk Menurut Kelompok Umur
+            </h1>
+
+            <p>
+                Data Statistik Tahun 2025
+            </p>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Kelompok Umur
+                        </th>
+
+                        <th>
+                            Laki-Laki
+                        </th>
+
+                        <th>
+                            Perempuan
+                        </th>
+
+                        <th>
+                            Total
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="dataPenduduk">
+
+                </tbody>
+
+            </table>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
